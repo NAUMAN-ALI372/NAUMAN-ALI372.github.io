@@ -1,0 +1,928 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+<head>
+    <meta charset="UTF-8">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <script src="script.js"></script>
+</body>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nauman Ali | AI & Machine Learning Engineer</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        darkBg: '#0b0f19',
+                        cardDark: '#131b2e',
+                        accentBlue: '#3b82f6',
+                        accentIndigo: '#6366f1',
+                    }
+                }
+            }
+        }
+    </script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        .code-font {
+            font-family: 'Fira Code', monospace;
+        }
+        .glass-panel {
+            background: rgba(19, 27, 46, 0.7);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+        }
+        .light .glass-panel {
+            background: rgba(255, 255, 255, 0.8);
+            border: 1px solid rgba(0, 0, 0, 0.08);
+        }
+        .gradient-text {
+            background: linear-gradient(135deg, #60a5fa 0%, #a855f7 50%, #ec4899 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+    </style>
+</head>
+<body class="bg-slate-950 text-slate-100 antialiased selection:bg-blue-500 selection:text-white transition-colors duration-300">
+
+    <nav class="sticky top-0 z-50 glass-panel border-b border-slate-800/50 px-6 py-4 transition-all duration-300">
+        <div class="max-w-7xl mx-auto flex items-center justify-between">
+            <a href="#" class="text-lg font-bold tracking-tight text-white flex items-center gap-2">
+                <span class="code-font text-blue-500">N</span>Auman Ali
+            </a>
+            
+            <div class="hidden lg:flex items-center space-x-6 text-sm font-medium text-slate-300">
+                <a href="#about" class="hover:text-blue-400 transition-colors">About</a>
+                <a href="#education" class="hover:text-blue-400 transition-colors">Education</a>
+                <a href="#skills" class="hover:text-blue-400 transition-colors">Skills</a>
+                <a href="#certifications" class="hover:text-blue-400 transition-colors">Certifications</a>
+                <a href="#experience" class="hover:text-blue-400 transition-colors">Experience</a>
+                <a href="#journey" class="hover:text-blue-400 transition-colors">Journey</a>
+                <a href="#projects" class="hover:text-blue-400 transition-colors">Projects</a>
+                <a href="#contact" class="hover:text-blue-400 transition-colors">Contact</a>
+            </div>
+
+            <div class="flex items-center gap-4">
+                <button id="theme-toggle" class="p-2 rounded-lg bg-slate-800/50 hover:bg-slate-800 text-slate-300 transition-colors">
+                    <i class="fa-solid fa-moon dark:hidden"></i>
+                    <i class="fa-solid fa-sun hidden dark:block"></i>
+                </button>
+                <button id="mobile-menu-btn" class="lg:hidden p-2 text-slate-300 hover:text-white">
+                    <i class="fa-solid fa-bars text-xl"></i>
+                </button>
+            </div>
+        </div>
+        
+        <div id="mobile-menu" class="hidden lg:hidden mt-4 pt-4 border-t border-slate-800 flex flex-col space-y-3 text-sm text-slate-300">
+            <a href="#about" class="hover:text-blue-400 transition-colors">About</a>
+            <a href="#education" class="hover:text-blue-400 transition-colors">Education</a>
+            <a href="#skills" class="hover:text-blue-400 transition-colors">Skills</a>
+            <a href="#certifications" class="hover:text-blue-400 transition-colors">Certifications</a>
+            <a href="#experience" class="hover:text-blue-400 transition-colors">Experience</a>
+            <a href="#journey" class="hover:text-blue-400 transition-colors">Journey</a>
+            <a href="#projects" class="hover:text-blue-400 transition-colors">Projects</a>
+            <a href="#contact" class="hover:text-blue-400 transition-colors">Contact</a>
+        </div>
+    </nav>
+
+    <header class="relative overflow-hidden py-24 lg:py-32 px-6">
+        <div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+            <div class="lg:col-span-7 space-y-6">
+                <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-blue-500/10 border border-blue-500/20 text-blue-400 text-xs font-medium">
+                    <i class="fa-solid fa-sparkles"></i> Mathematics Graduate Turned AI Engineer
+                </div>
+                <h1 class="text-4xl sm:text-6xl font-bold tracking-tight text-white">
+                    Hi, this is <span class="gradient-text">Nauman Ali</span>.
+                </h1>
+                <p class="text-2xl sm:text-3xl font-semibold text-slate-300">
+                    AI & Machine Learning Engineer
+                </p>
+                <p class="code-font text-sm sm:text-base text-blue-400 font-medium">
+                    Mathematics-driven problem solving meets modern Artificial Intelligence.
+                </p>
+                <p class="text-slate-400 text-base sm:text-lg leading-relaxed max-w-2xl">
+                    "I am an AI & Machine Learning Engineer with a strong academic foundation in Mathematics and hands-on knowledge of Machine Learning, Deep Learning, Generative AI, Large Language Models, RAG systems, AI Agents, and model deployment."
+                </p>
+                
+                <div class="flex flex-wrap gap-4 pt-2">
+                    <a href="#skills" class="px-6 py-3 rounded-lg bg-blue-600 hover:bg-blue-500 text-white font-medium transition-all shadow-lg shadow-blue-500/25 flex items-center gap-2">
+                        View My Skills <i class="fa-solid fa-arrow-down text-xs"></i>
+                    </a>
+                    <a href="#contact" class="px-6 py-3 rounded-lg bg-slate-800 hover:bg-slate-700 text-slate-200 font-medium transition-all border border-slate-700">
+                        Contact Me
+                    </a>
+                </div>
+
+                <div class="flex items-center gap-4 pt-4 text-slate-400">
+                    <span class="text-xs uppercase tracking-wider text-slate-500 font-semibold">Connect:</span>
+                    <a href="https://github.com/NAUMAN-ALI372" target="_blank" class="hover:text-blue-400 transition-colors text-lg"><i class="fa-brands fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/nauman-ali-b909261ba/" target="_blank" class="hover:text-blue-400 transition-colors text-lg"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="mailto:[placeholder-mnauman912@gmail.com]" class="hover:text-blue-400 transition-colors text-lg"><i class="fa-solid fa-envelope"></i></a>
+                </div>
+            </div>
+
+            <div class="lg:col-span-5 flex justify-center">
+                <div class="glass-panel p-8 rounded-2xl relative w-full max-w-md shadow-2xl border border-slate-800 flex flex-col items-center justify-center space-y-6">
+                    <div class="absolute -top-3 -right-3 w-20 h-20 bg-blue-500/10 rounded-full blur-xl"></div>
+                    <div class="absolute -bottom-3 -left-3 w-20 h-20 bg-indigo-500/10 rounded-full blur-xl"></div>
+                    
+                    <div class="text-center space-y-2">
+                        <span class="text-xs code-font text-blue-400 uppercase tracking-widest">[Core Architecture]</span>
+                        <h3 class="text-lg font-semibold text-white">Math $\rightarrow$ Neural Weights</h3>
+                    </div>
+                    
+                    <div class="w-full py-6 flex flex-col items-center justify-center space-y-4">
+                        <div class="code-font text-xs text-slate-400 bg-slate-900/80 px-4 py-2 rounded border border-slate-800 w-full text-center">
+                            $\nabla \mathcal{L}(\theta) = \frac{1}{m} \sum (h_\theta(x^{(i)}) - y^{(i)})x^{(i)}$
+                        </div>
+                        <div class="flex justify-center items-center space-x-6 text-blue-500 my-2">
+                            <i class="fa-solid fa-circle-nodes text-2xl animate-pulse"></i>
+                            <i class="fa-solid fa-arrow-right text-slate-600 text-sm"></i>
+                            <i class="fa-solid fa-brain text-2xl text-indigo-400"></i>
+                        </div>
+                        <div class="flex gap-2 flex-wrap justify-center">
+                            <span class="text-[10px] code-font px-2 py-0.5 bg-slate-900 text-slate-300 rounded border border-slate-800">LLM RAG</span>
+                            <span class="text-[10px] code-font px-2 py-0.5 bg-slate-900 text-slate-300 rounded border border-slate-800">Agents</span>
+                            <span class="text-[10px] code-font px-2 py-0.5 bg-slate-900 text-slate-300 rounded border border-slate-800">PyTorch</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section id="about" class="py-20 px-6 border-t border-slate-900 bg-slate-900/30">
+        <div class="max-w-4xl mx-auto space-y-8">
+            <div class="space-y-2 text-center">
+                <h2 class="text-3xl font-bold text-white tracking-tight">About Me</h2>
+                <div class="w-12 h-1 bg-blue-500 mx-auto rounded-full"></div>
+            </div>
+            
+            <div class="glass-panel p-8 sm:p-10 rounded-2xl space-y-6 leading-relaxed text-slate-300 shadow-xl">
+                <p>
+                    "With a background in Mathematics and experience in academia, I have developed a strong foundation in analytical thinking, problem solving, statistics, probability, and mathematical reasoning. I have transitioned these skills into Artificial Intelligence and Machine Learning, building expertise across traditional ML, Deep Learning, Natural Language Processing, Generative AI, LLM applications, RAG systems, and AI Agents."
+                </p>
+                <p>
+                    "Before transitioning into AI/ML, I worked as an Assistant Professor at Meerut Institute of Engineering and Technology (MIET), Meerut, where I taught second-year engineering students. Teaching strengthened my ability to understand complex concepts, communicate technical ideas clearly, and approach problems systematically."
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section id="education" class="py-20 px-6 border-t border-slate-900">
+        <div class="max-w-4xl mx-auto space-y-12">
+            <div class="space-y-2 text-center">
+                <h2 class="text-3xl font-bold text-white tracking-tight">Education</h2>
+                <div class="w-12 h-1 bg-blue-500 mx-auto rounded-full"></div>
+                <p class="text-slate-400 text-sm">Academic foundation grounding modern computational problem-solving.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div class="glass-panel p-6 sm:p-8 rounded-2xl flex flex-col justify-between space-y-4 hover:border-blue-500/50 transition-all">
+                    <div class="space-y-2">
+                        <div class="flex items-center justify-between">
+                            <span class="text-xs code-font text-blue-400 font-semibold uppercase tracking-wider">Postgraduate</span>
+                            <i class="fa-solid fa-graduation-cap text-slate-500"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-white">Master of Science (M.Sc.) in Mathematics</h3>
+                        <p class="text-slate-400 text-sm font-medium">Jamia Millia Islamia</p>
+                    </div>
+                    <div class="pt-4 border-t border-slate-800 flex flex-wrap gap-2">
+                        <span class="text-xs px-2.5 py-1 rounded-md bg-slate-900 text-slate-300 border border-slate-800">Mathematics</span>
+                        <span class="text-xs px-2.5 py-1 rounded-md bg-slate-900 text-slate-300 border border-slate-800">Mathematical reasoning</span>
+                        <span class="text-xs px-2.5 py-1 rounded-md bg-slate-900 text-slate-300 border border-slate-800">Statistics</span>
+                        <span class="text-xs px-2.5 py-1 rounded-md bg-slate-900 text-slate-300 border border-slate-800">Analytical problem solving</span>
+                    </div>
+                </div>
+
+                <div class="glass-panel p-6 sm:p-8 rounded-2xl flex flex-col justify-between space-y-4 hover:border-blue-500/50 transition-all">
+                    <div class="space-y-2">
+                        <div class="flex items-center justify-between">
+                            <span class="text-xs code-font text-blue-400 font-semibold uppercase tracking-wider">Undergraduate</span>
+                            <i class="fa-solid fa-book-open text-slate-500"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-white">Bachelor's Degree in Mathematics</h3>
+                        <p class="text-slate-400 text-sm font-medium">Aligarh Muslim University</p>
+                    </div>
+                    <div class="pt-4 border-t border-slate-800 flex flex-wrap gap-2">
+                        <span class="text-xs px-2.5 py-1 rounded-md bg-slate-900 text-slate-300 border border-slate-800">Mathematical foundations</span>
+                        <span class="text-xs px-2.5 py-1 rounded-md bg-slate-900 text-slate-300 border border-slate-800">Analytical thinking</span>
+                        <span class="text-xs px-2.5 py-1 rounded-md bg-slate-900 text-slate-300 border border-slate-800">Problem solving</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" class="py-20 px-6 border-t border-slate-900 bg-slate-900/30">
+        <div class="max-w-6xl mx-auto space-y-12">
+            <div class="space-y-2 text-center">
+                <h2 class="text-3xl font-bold text-white tracking-tight">Technical Skills</h2>
+                <div class="w-12 h-1 bg-blue-500 mx-auto rounded-full"></div>
+                <p class="text-slate-400 text-sm">Comprehensive technical stack spanning foundational data analysis to advanced Generative AI systems.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                
+                <div class="glass-panel p-6 rounded-2xl space-y-4">
+                    <div class="flex items-center space-x-3 text-blue-400">
+                        <i class="fa-solid fa-code text-lg"></i>
+                        <h3 class="font-semibold text-white">Programming & Data</h3>
+                    </div>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-3 py-1 bg-slate-900/80 border border-slate-800 text-slate-300 rounded-lg text-xs font-medium">Python</span>
+                        <span class="px-3 py-1 bg-slate-900/80 border border-slate-800 text-slate-300 rounded-lg text-xs font-medium">NumPy</span>
+                        <span class="px-3 py-1 bg-slate-900/80 border border-slate-800 text-slate-300 rounded-lg text-xs font-medium">Pandas</span>
+                        <span class="px-3 py-1 bg-slate-900/80 border border-slate-800 text-slate-300 rounded-lg text-xs font-medium">Data Analysis</span>
+                        <span class="px-3 py-1 bg-slate-900/80 border border-slate-800 text-slate-300 rounded-lg text-xs font-medium">Statistics & Probability</span>
+                    </div>
+                </div>
+
+                <div class="glass-panel p-6 rounded-2xl space-y-4">
+                    <div class="flex items-center space-x-3 text-blue-400">
+                        <i class="fa-solid fa-chart-line text-lg"></i>
+                        <h3 class="font-semibold text-white">Machine Learning</h3>
+                    </div>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-3 py-1 bg-slate-900/80 border border-slate-800 text-slate-300 rounded-lg text-xs font-medium">Feature Engineering</span>
+                        <span class="px-3 py-1 bg-slate-900/80 border border-slate-800 text-slate-300 rounded-lg text-xs font-medium">Exploratory Data Analysis (EDA)</span>
+                        <span class="px-3 py-1 bg-slate-900/80 border border-slate-800 text-slate-300 rounded-lg text-xs font-medium">Regression</span>
+                        <span class="px-3 py-1 bg-slate-900/80 border border-slate-800 text-slate-300 rounded-lg text-xs font-medium">Classification</span>
+                        <span class="px-3 py-1 bg-slate-900/80 border border-slate-800 text-slate-300 rounded-lg text-xs font-medium">Machine Learning Algorithms</span>
+                        <span class="px-3 py-1 bg-slate-900/80 border border-slate-800 text-slate-300 rounded-lg text-xs font-medium">Model Evaluation</span>
+                        <span class="px-3 py-1 bg-slate-900/80 border border-slate-800 text-slate-300 rounded-lg text-xs font-medium">Hyperparameter Tuning</span>
+                    </div>
+                </div>
+
+                <div class="glass-panel p-6 rounded-2xl space-y-4">
+                    <div class="flex items-center space-x-3 text-blue-400">
+                        <i class="fa-solid fa-network-wired text-lg"></i>
+                        <h3 class="font-semibold text-white">Deep Learning</h3>
+                    </div>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-3 py-1 bg-slate-900/80 border border-slate-800 text-slate-300 rounded-lg text-xs font-medium">Deep Learning</span>
+                        <span class="px-3 py-1 bg-slate-900/80 border border-slate-800 text-slate-300 rounded-lg text-xs font-medium">Neural Networks</span>
+                        <span class="px-3 py-1 bg-slate-900/80 border border-slate-800 text-slate-300 rounded-lg text-xs font-medium">Computer Vision</span>
+                        <span class="px-3 py-1 bg-slate-900/80 border border-slate-800 text-slate-300 rounded-lg text-xs font-medium">Convolutional Neural Networks (CNNs)</span>
+                    </div>
+                </div>
+
+                <div class="glass-panel p-6 rounded-2xl space-y-4">
+                    <div class="flex items-center space-x-3 text-blue-400">
+                        <i class="fa-solid fa-comments text-lg"></i>
+                        <h3 class="font-semibold text-white">NLP & Generative AI</h3>
+                    </div>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-3 py-1 bg-slate-900/80 border border-slate-800 text-slate-300 rounded-lg text-xs font-medium">Natural Language Processing (NLP)</span>
+                        <span class="px-3 py-1 bg-slate-900/80 border border-slate-800 text-slate-300 rounded-lg text-xs font-medium">Transformers</span>
+                        <span class="px-3 py-1 bg-slate-900/80 border border-slate-800 text-slate-300 rounded-lg text-xs font-medium">Large Language Models (LLMs)</span>
+                        <span class="px-3 py-1 bg-slate-900/80 border border-slate-800 text-slate-300 rounded-lg text-xs font-medium">Prompt Engineering</span>
+                        <span class="px-3 py-1 bg-slate-900/80 border border-slate-800 text-slate-300 rounded-lg text-xs font-medium">OpenAI APIs</span>
+                    </div>
+                </div>
+
+                <div class="glass-panel p-6 rounded-2xl space-y-4">
+                    <div class="flex items-center space-x-3 text-blue-400">
+                        <i class="fa-solid fa-robot text-lg"></i>
+                        <h3 class="font-semibold text-white">AI Application Development</h3>
+                    </div>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-3 py-1 bg-slate-900/80 border border-slate-800 text-slate-300 rounded-lg text-xs font-medium">LangChain</span>
+                        <span class="px-3 py-1 bg-slate-900/80 border border-slate-800 text-slate-300 rounded-lg text-xs font-medium">LangGraph</span>
+                        <span class="px-3 py-1 bg-slate-900/80 border border-slate-800 text-slate-300 rounded-lg text-xs font-medium">Retrieval-Augmented Generation (RAG)</span>
+                        <span class="px-3 py-1 bg-slate-900/80 border border-slate-800 text-slate-300 rounded-lg text-xs font-medium">AI Agents</span>
+                        <span class="px-3 py-1 bg-slate-900/80 border border-slate-800 text-slate-300 rounded-lg text-xs font-medium">Multi-Agent Systems</span>
+                        <span class="px-3 py-1 bg-slate-900/80 border border-slate-800 text-slate-300 rounded-lg text-xs font-medium">Model Context Protocol (MCP)</span>
+                    </div>
+                </div>
+
+                <div class="glass-panel p-6 rounded-2xl space-y-4">
+                    <div class="flex items-center space-x-3 text-blue-400">
+                        <i class="fa-solid fa-database text-lg"></i>
+                        <h3 class="font-semibold text-white">Vector Databases & Ecosystem</h3>
+                    </div>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-3 py-1 bg-slate-900/80 border border-slate-800 text-slate-300 rounded-lg text-xs font-medium">Vector Databases</span>
+                        <span class="px-3 py-1 bg-slate-900/80 border border-slate-800 text-slate-300 rounded-lg text-xs font-medium">FAISS</span>
+                        <span class="px-3 py-1 bg-slate-900/80 border border-slate-800 text-slate-300 rounded-lg text-xs font-medium">ChromaDB</span>
+                        <span class="px-3 py-1 bg-slate-900/80 border border-slate-800 text-slate-300 rounded-lg text-xs font-medium">Pinecone</span>
+                        <span class="px-3 py-1 bg-slate-900/80 border border-slate-800 text-slate-300 rounded-lg text-xs font-medium">Hugging Face</span>
+                        <span class="px-3 py-1 bg-slate-900/80 border border-slate-800 text-slate-300 rounded-lg text-xs font-medium">Model Deployment</span>
+                        <span class="px-3 py-1 bg-slate-900/80 border border-slate-800 text-slate-300 rounded-lg text-xs font-medium">Streamlit</span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="certifications" class="py-20 px-6 border-t border-slate-900">
+        <div class="max-w-6xl mx-auto space-y-12">
+            <div class="space-y-2 text-center">
+                <h2 class="text-3xl font-bold text-white tracking-tight">Certifications & Learning Areas</h2>
+                <div class="w-12 h-1 bg-blue-500 mx-auto rounded-full"></div>
+                <p class="text-slate-400 text-sm">Rigorous professional learning credentials and domain competencies.</p>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                
+                <div class="glass-panel p-6 rounded-2xl flex flex-col justify-between space-y-4 hover:border-blue-500/40 transition-all">
+                    <div class="space-y-3">
+                        <div class="flex items-center justify-between text-blue-400">
+                            <i class="fa-solid fa-certificate text-xl"></i>
+                            <span class="text-[10px] code-font px-2 py-0.5 rounded bg-slate-900 border border-slate-800 text-slate-400">Verified</span>
+                        </div>
+                        <h3 class="font-semibold text-white">Python for AI & Machine Learning</h3>
+                    </div>
+                    <div class="pt-4 border-t border-slate-800/80 flex items-center justify-between">
+                        <span class="text-xs text-slate-500">Credential Placeholder</span>
+                        <a href="[placeholder-certificate-link]" target="_blank" class="text-xs text-blue-400 hover:text-blue-300 font-medium flex items-center gap-1">Verify <i class="fa-solid fa-arrow-up-right-from-square text-[10px]"></i></a>
+                    </div>
+                </div>
+
+                <div class="glass-panel p-6 rounded-2xl flex flex-col justify-between space-y-4 hover:border-blue-500/40 transition-all">
+                    <div class="space-y-3">
+                        <div class="flex items-center justify-between text-blue-400">
+                            <i class="fa-solid fa-certificate text-xl"></i>
+                            <span class="text-[10px] code-font px-2 py-0.5 rounded bg-slate-900 border border-slate-800 text-slate-400">Verified</span>
+                        </div>
+                        <h3 class="font-semibold text-white">NumPy, Pandas & Data Analysis</h3>
+                    </div>
+                    <div class="pt-4 border-t border-slate-800/80 flex items-center justify-between">
+                        <span class="text-xs text-slate-500">Credential Placeholder</span>
+                        <a href="[placeholder-certificate-link]" target="_blank" class="text-xs text-blue-400 hover:text-blue-300 font-medium flex items-center gap-1">Verify <i class="fa-solid fa-arrow-up-right-from-square text-[10px]"></i></a>
+                    </div>
+                </div>
+
+                <div class="glass-panel p-6 rounded-2xl flex flex-col justify-between space-y-4 hover:border-blue-500/40 transition-all">
+                    <div class="space-y-3">
+                        <div class="flex items-center justify-between text-blue-400">
+                            <i class="fa-solid fa-certificate text-xl"></i>
+                            <span class="text-[10px] code-font px-2 py-0.5 rounded bg-slate-900 border border-slate-800 text-slate-400">Verified</span>
+                        </div>
+                        <h3 class="font-semibold text-white">Statistics & Probability for ML</h3>
+                    </div>
+                    <div class="pt-4 border-t border-slate-800/80 flex items-center justify-between">
+                        <span class="text-xs text-slate-500">Credential Placeholder</span>
+                        <a href="[placeholder-certificate-link]" target="_blank" class="text-xs text-blue-400 hover:text-blue-300 font-medium flex items-center gap-1">Verify <i class="fa-solid fa-arrow-up-right-from-square text-[10px]"></i></a>
+                    </div>
+                </div>
+
+                <div class="glass-panel p-6 rounded-2xl flex flex-col justify-between space-y-4 hover:border-blue-500/40 transition-all">
+                    <div class="space-y-3">
+                        <div class="flex items-center justify-between text-blue-400">
+                            <i class="fa-solid fa-certificate text-xl"></i>
+                            <span class="text-[10px] code-font px-2 py-0.5 rounded bg-slate-900 border border-slate-800 text-slate-400">Verified</span>
+                        </div>
+                        <h3 class="font-semibold text-white">Feature Engineering & EDA</h3>
+                    </div>
+                    <div class="pt-4 border-t border-slate-800/80 flex items-center justify-between">
+                        <span class="text-xs text-slate-500">Credential Placeholder</span>
+                        <a href="[placeholder-certificate-link]" target="_blank" class="text-xs text-blue-400 hover:text-blue-300 font-medium flex items-center gap-1">Verify <i class="fa-solid fa-arrow-up-right-from-square text-[10px]"></i></a>
+                    </div>
+                </div>
+
+                <div class="glass-panel p-6 rounded-2xl flex flex-col justify-between space-y-4 hover:border-blue-500/40 transition-all">
+                    <div class="space-y-3">
+                        <div class="flex items-center justify-between text-blue-400">
+                            <i class="fa-solid fa-certificate text-xl"></i>
+                            <span class="text-[10px] code-font px-2 py-0.5 rounded bg-slate-900 border border-slate-800 text-slate-400">Verified</span>
+                        </div>
+                        <h3 class="font-semibold text-white">ML Algorithms — Regression & Classification</h3>
+                    </div>
+                    <div class="pt-4 border-t border-slate-800/80 flex items-center justify-between">
+                        <span class="text-xs text-slate-500">Credential Placeholder</span>
+                        <a href="[placeholder-certificate-link]" target="_blank" class="text-xs text-blue-400 hover:text-blue-300 font-medium flex items-center gap-1">Verify <i class="fa-solid fa-arrow-up-right-from-square text-[10px]"></i></a>
+                    </div>
+                </div>
+
+                <div class="glass-panel p-6 rounded-2xl flex flex-col justify-between space-y-4 hover:border-blue-500/40 transition-all">
+                    <div class="space-y-3">
+                        <div class="flex items-center justify-between text-blue-400">
+                            <i class="fa-solid fa-certificate text-xl"></i>
+                            <span class="text-[10px] code-font px-2 py-0.5 rounded bg-slate-900 border border-slate-800 text-slate-400">Verified</span>
+                        </div>
+                        <h3 class="font-semibold text-white">Model Evaluation & Hyperparameter Tuning</h3>
+                    </div>
+                    <div class="pt-4 border-t border-slate-800/80 flex items-center justify-between">
+                        <span class="text-xs text-slate-500">Credential Placeholder</span>
+                        <a href="[placeholder-certificate-link]" target="_blank" class="text-xs text-blue-400 hover:text-blue-300 font-medium flex items-center gap-1">Verify <i class="fa-solid fa-arrow-up-right-from-square text-[10px]"></i></a>
+                    </div>
+                </div>
+
+                <div class="glass-panel p-6 rounded-2xl flex flex-col justify-between space-y-4 hover:border-blue-500/40 transition-all">
+                    <div class="space-y-3">
+                        <div class="flex items-center justify-between text-blue-400">
+                            <i class="fa-solid fa-certificate text-xl"></i>
+                            <span class="text-[10px] code-font px-2 py-0.5 rounded bg-slate-900 border border-slate-800 text-slate-400">Verified</span>
+                        </div>
+                        <h3 class="font-semibold text-white">Deep Learning & Neural Networks</h3>
+                    </div>
+                    <div class="pt-4 border-t border-slate-800/80 flex items-center justify-between">
+                        <span class="text-xs text-slate-500">Credential Placeholder</span>
+                        <a href="[placeholder-certificate-link]" target="_blank" class="text-xs text-blue-400 hover:text-blue-300 font-medium flex items-center gap-1">Verify <i class="fa-solid fa-arrow-up-right-from-square text-[10px]"></i></a>
+                    </div>
+                </div>
+
+                <div class="glass-panel p-6 rounded-2xl flex flex-col justify-between space-y-4 hover:border-blue-500/40 transition-all">
+                    <div class="space-y-3">
+                        <div class="flex items-center justify-between text-blue-400">
+                            <i class="fa-solid fa-certificate text-xl"></i>
+                            <span class="text-[10px] code-font px-2 py-0.5 rounded bg-slate-900 border border-slate-800 text-slate-400">Verified</span>
+                        </div>
+                        <h3 class="font-semibold text-white">Computer Vision — CNNs</h3>
+                    </div>
+                    <div class="pt-4 border-t border-slate-800/80 flex items-center justify-between">
+                        <span class="text-xs text-slate-500">Credential Placeholder</span>
+                        <a href="[placeholder-certificate-link]" target="_blank" class="text-xs text-blue-400 hover:text-blue-300 font-medium flex items-center gap-1">Verify <i class="fa-solid fa-arrow-up-right-from-square text-[10px]"></i></a>
+                    </div>
+                </div>
+
+                <div class="glass-panel p-6 rounded-2xl flex flex-col justify-between space-y-4 hover:border-blue-500/40 transition-all">
+                    <div class="space-y-3">
+                        <div class="flex items-center justify-between text-blue-400">
+                            <i class="fa-solid fa-certificate text-xl"></i>
+                            <span class="text-[10px] code-font px-2 py-0.5 rounded bg-slate-900 border border-slate-800 text-slate-400">Verified</span>
+                        </div>
+                        <h3 class="font-semibold text-white">NLP & Transformers</h3>
+                    </div>
+                    <div class="pt-4 border-t border-slate-800/80 flex items-center justify-between">
+                        <span class="text-xs text-slate-500">Credential Placeholder</span>
+                        <a href="[placeholder-certificate-link]" target="_blank" class="text-xs text-blue-400 hover:text-blue-300 font-medium flex items-center gap-1">Verify <i class="fa-solid fa-arrow-up-right-from-square text-[10px]"></i></a>
+                    </div>
+                </div>
+
+                <div class="glass-panel p-6 rounded-2xl flex flex-col justify-between space-y-4 hover:border-blue-500/40 transition-all">
+                    <div class="space-y-3">
+                        <div class="flex items-center justify-between text-blue-400">
+                            <i class="fa-solid fa-certificate text-xl"></i>
+                            <span class="text-[10px] code-font px-2 py-0.5 rounded bg-slate-900 border border-slate-800 text-slate-400">Verified</span>
+                        </div>
+                        <h3 class="font-semibold text-white">Large Language Models & Prompt Engineering</h3>
+                    </div>
+                    <div class="pt-4 border-t border-slate-800/80 flex items-center justify-between">
+                        <span class="text-xs text-slate-500">Credential Placeholder</span>
+                        <a href="[placeholder-certificate-link]" target="_blank" class="text-xs text-blue-400 hover:text-blue-300 font-medium flex items-center gap-1">Verify <i class="fa-solid fa-arrow-up-right-from-square text-[10px]"></i></a>
+                    </div>
+                </div>
+
+                <div class="glass-panel p-6 rounded-2xl flex flex-col justify-between space-y-4 hover:border-blue-500/40 transition-all">
+                    <div class="space-y-3">
+                        <div class="flex items-center justify-between text-blue-400">
+                            <i class="fa-solid fa-certificate text-xl"></i>
+                            <span class="text-[10px] code-font px-2 py-0.5 rounded bg-slate-900 border border-slate-800 text-slate-400">Verified</span>
+                        </div>
+                        <h3 class="font-semibold text-white">LangChain & LangGraph Development</h3>
+                    </div>
+                    <div class="pt-4 border-t border-slate-800/80 flex items-center justify-between">
+                        <span class="text-xs text-slate-500">Credential Placeholder</span>
+                        <a href="[placeholder-certificate-link]" target="_blank" class="text-xs text-blue-400 hover:text-blue-300 font-medium flex items-center gap-1">Verify <i class="fa-solid fa-arrow-up-right-from-square text-[10px]"></i></a>
+                    </div>
+                </div>
+
+                <div class="glass-panel p-6 rounded-2xl flex flex-col justify-between space-y-4 hover:border-blue-500/40 transition-all">
+                    <div class="space-y-3">
+                        <div class="flex items-center justify-between text-blue-400">
+                            <i class="fa-solid fa-certificate text-xl"></i>
+                            <span class="text-[10px] code-font px-2 py-0.5 rounded bg-slate-900 border border-slate-800 text-slate-400">Verified</span>
+                        </div>
+                        <h3 class="font-semibold text-white">Vector Databases (FAISS, ChromaDB, Pinecone)</h3>
+                    </div>
+                    <div class="pt-4 border-t border-slate-800/80 flex items-center justify-between">
+                        <span class="text-xs text-slate-500">Credential Placeholder</span>
+                        <a href="[placeholder-certificate-link]" target="_blank" class="text-xs text-blue-400 hover:text-blue-300 font-medium flex items-center gap-1">Verify <i class="fa-solid fa-arrow-up-right-from-square text-[10px]"></i></a>
+                    </div>
+                </div>
+
+                <div class="glass-panel p-6 rounded-2xl flex flex-col justify-between space-y-4 hover:border-blue-500/40 transition-all">
+                    <div class="space-y-3">
+                        <div class="flex items-center justify-between text-blue-400">
+                            <i class="fa-solid fa-certificate text-xl"></i>
+                            <span class="text-[10px] code-font px-2 py-0.5 rounded bg-slate-900 border border-slate-800 text-slate-400">Verified</span>
+                        </div>
+                        <h3 class="font-semibold text-white">Retrieval-Augmented Generation (RAG)</h3>
+                    </div>
+                    <div class="pt-4 border-t border-slate-800/80 flex items-center justify-between">
+                        <span class="text-xs text-slate-500">Credential Placeholder</span>
+                        <a href="[placeholder-certificate-link]" target="_blank" class="text-xs text-blue-400 hover:text-blue-300 font-medium flex items-center gap-1">Verify <i class="fa-solid fa-arrow-up-right-from-square text-[10px]"></i></a>
+                    </div>
+                </div>
+
+                <div class="glass-panel p-6 rounded-2xl flex flex-col justify-between space-y-4 hover:border-blue-500/40 transition-all">
+                    <div class="space-y-3">
+                        <div class="flex items-center justify-between text-blue-400">
+                            <i class="fa-solid fa-certificate text-xl"></i>
+                            <span class="text-[10px] code-font px-2 py-0.5 rounded bg-slate-900 border border-slate-800 text-slate-400">Verified</span>
+                        </div>
+                        <h3 class="font-semibold text-white">AI Agents & Multi-Agent Systems</h3>
+                    </div>
+                    <div class="pt-4 border-t border-slate-800/80 flex items-center justify-between">
+                        <span class="text-xs text-slate-500">Credential Placeholder</span>
+                        <a href="[placeholder-certificate-link]" target="_blank" class="text-xs text-blue-400 hover:text-blue-300 font-medium flex items-center gap-1">Verify <i class="fa-solid fa-arrow-up-right-from-square text-[10px]"></i></a>
+                    </div>
+                </div>
+
+                <div class="glass-panel p-6 rounded-2xl flex flex-col justify-between space-y-4 hover:border-blue-500/40 transition-all">
+                    <div class="space-y-3">
+                        <div class="flex items-center justify-between text-blue-400">
+                            <i class="fa-solid fa-certificate text-xl"></i>
+                            <span class="text-[10px] code-font px-2 py-0.5 rounded bg-slate-900 border border-slate-800 text-slate-400">Verified</span>
+                        </div>
+                        <h3 class="font-semibold text-white">Model Context Protocol (MCP)</h3>
+                    </div>
+                    <div class="pt-4 border-t border-slate-800/80 flex items-center justify-between">
+                        <span class="text-xs text-slate-500">Credential Placeholder</span>
+                        <a href="[placeholder-certificate-link]" target="_blank" class="text-xs text-blue-400 hover:text-blue-300 font-medium flex items-center gap-1">Verify <i class="fa-solid fa-arrow-up-right-from-square text-[10px]"></i></a>
+                    </div>
+                </div>
+
+                <div class="glass-panel p-6 rounded-2xl flex flex-col justify-between space-y-4 hover:border-blue-500/40 transition-all">
+                    <div class="space-y-3">
+                        <div class="flex items-center justify-between text-blue-400">
+                            <i class="fa-solid fa-certificate text-xl"></i>
+                            <span class="text-[10px] code-font px-2 py-0.5 rounded bg-slate-900 border border-slate-800 text-slate-400">Verified</span>
+                        </div>
+                        <h3 class="font-semibold text-white">Hugging Face & Model Deployment</h3>
+                    </div>
+                    <div class="pt-4 border-t border-slate-800/80 flex items-center justify-between">
+                        <span class="text-xs text-slate-500">Credential Placeholder</span>
+                        <a href="[placeholder-certificate-link]" target="_blank" class="text-xs text-blue-400 hover:text-blue-300 font-medium flex items-center gap-1">Verify <i class="fa-solid fa-arrow-up-right-from-square text-[10px]"></i></a>
+                    </div>
+                </div>
+
+                <div class="glass-panel p-6 rounded-2xl flex flex-col justify-between space-y-4 hover:border-blue-500/40 transition-all">
+                    <div class="space-y-3">
+                        <div class="flex items-center justify-between text-blue-400">
+                            <i class="fa-solid fa-certificate text-xl"></i>
+                            <span class="text-[10px] code-font px-2 py-0.5 rounded bg-slate-900 border border-slate-800 text-slate-400">Verified</span>
+                        </div>
+                        <h3 class="font-semibold text-white">Streamlit Deployment</h3>
+                    </div>
+                    <div class="pt-4 border-t border-slate-800/80 flex items-center justify-between">
+                        <span class="text-xs text-slate-500">Credential Placeholder</span>
+                        <a href="[placeholder-certificate-link]" target="_blank" class="text-xs text-blue-400 hover:text-blue-300 font-medium flex items-center gap-1">Verify <i class="fa-solid fa-arrow-up-right-from-square text-[10px]"></i></a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="experience" class="py-20 px-6 border-t border-slate-900 bg-slate-900/30">
+        <div class="max-w-4xl mx-auto space-y-12">
+            <div class="space-y-2 text-center">
+                <h2 class="text-3xl font-bold text-white tracking-tight">Professional Experience</h2>
+                <div class="w-12 h-1 bg-blue-500 mx-auto rounded-full"></div>
+            </div>
+
+            <div class="glass-panel p-8 rounded-2xl space-y-6 relative border-l-4 border-l-blue-500">
+                <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2">
+                    <div>
+                        <h3 class="text-xl font-bold text-white">Assistant Professor of Mathematics</h3>
+                        <p class="text-blue-400 font-medium text-sm">Meerut Institute of Engineering and Technology (MIET), Meerut</p>
+                    </div>
+                    <span class="code-font text-xs text-slate-400 bg-slate-900 px-3 py-1 rounded-full border border-slate-800 w-fit">Academic Experience</span>
+                </div>
+
+                <p class="text-slate-300 text-sm leading-relaxed">
+                    "Worked as an Assistant Professor of Mathematics, teaching second-year engineering students and helping them develop strong mathematical and analytical foundations."
+                </p>
+
+                <div class="space-y-3">
+                    <h4 class="text-xs uppercase tracking-wider font-semibold text-slate-400">Key Responsibilities:</h4>
+                    <ul class="space-y-2 text-sm text-slate-300 list-disc list-inside">
+                        <li>Teaching Mathematics to second-year engineering students</li>
+                        <li>Explaining mathematical concepts and problem-solving techniques</li>
+                        <li>Preparing lectures, assignments, and assessments</li>
+                        <li>Guiding students through mathematical and analytical problems</li>
+                        <li>Communicating complex concepts in a clear and structured manner</li>
+                    </ul>
+                </div>
+
+                <div class="pt-6 border-t border-slate-800/80 flex items-center justify-center">
+                    <div class="code-font text-xs text-blue-400 bg-slate-900/90 px-4 py-2 rounded-lg border border-slate-800 flex items-center gap-2 flex-wrap justify-center text-center">
+                        <span>Mathematics</span> <i class="fa-solid fa-arrow-right text-[10px] text-slate-500"></i> 
+                        <span>Analytical Thinking</span> <i class="fa-solid fa-arrow-right text-[10px] text-slate-500"></i> 
+                        <span>Machine Learning</span> <i class="fa-solid fa-arrow-right text-[10px] text-slate-500"></i> 
+                        <span>Artificial Intelligence</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="journey" class="py-20 px-6 border-t border-slate-900">
+        <div class="max-w-4xl mx-auto space-y-12">
+            <div class="space-y-2 text-center">
+                <h2 class="text-3xl font-bold text-white tracking-tight">AI/ML Journey</h2>
+                <div class="w-12 h-1 bg-blue-500 mx-auto rounded-full"></div>
+                <p class="text-slate-400 text-sm">Visualizing the path from pure mathematical foundations to advanced AI engineering systems.</p>
+            </div>
+
+            <div class="glass-panel p-8 sm:p-10 rounded-2xl flex flex-col items-center space-y-4">
+                
+                <div class="w-full max-w-md p-4 rounded-xl bg-slate-900/90 border border-slate-800 text-center font-medium text-slate-200 text-sm shadow-md">
+                    Mathematics
+                </div>
+                <i class="fa-solid fa-arrow-down text-blue-500 text-sm animate-pulse"></i>
+
+                <div class="w-full max-w-md p-4 rounded-xl bg-slate-900/90 border border-slate-800 text-center font-medium text-slate-200 text-sm shadow-md">
+                    Statistics & Probability
+                </div>
+                <i class="fa-solid fa-arrow-down text-blue-500 text-sm animate-pulse"></i>
+
+                <div class="w-full max-w-md p-4 rounded-xl bg-slate-900/90 border border-slate-800 text-center font-medium text-slate-200 text-sm shadow-md">
+                    Python & Data Analysis
+                </div>
+                <i class="fa-solid fa-arrow-down text-blue-500 text-sm animate-pulse"></i>
+
+                <div class="w-full max-w-md p-4 rounded-xl bg-slate-900/90 border border-slate-800 text-center font-medium text-slate-200 text-sm shadow-md">
+                    Machine Learning
+                </div>
+                <i class="fa-solid fa-arrow-down text-blue-500 text-sm animate-pulse"></i>
+
+                <div class="w-full max-w-md p-4 rounded-xl bg-slate-900/90 border border-slate-800 text-center font-medium text-slate-200 text-sm shadow-md">
+                    Deep Learning
+                </div>
+                <i class="fa-solid fa-arrow-down text-blue-500 text-sm animate-pulse"></i>
+
+                <div class="w-full max-w-md p-4 rounded-xl bg-slate-900/90 border border-slate-800 text-center font-medium text-slate-200 text-sm shadow-md">
+                    NLP & Computer Vision
+                </div>
+                <i class="fa-solid fa-arrow-down text-blue-500 text-sm animate-pulse"></i>
+
+                <div class="w-full max-w-md p-4 rounded-xl bg-slate-900/90 border border-slate-800 text-center font-medium text-slate-200 text-sm shadow-md">
+                    Generative AI & LLMs
+                </div>
+                <i class="fa-solid fa-arrow-down text-blue-500 text-sm animate-pulse"></i>
+
+                <div class="w-full max-w-md p-4 rounded-xl bg-slate-900/90 border border-slate-800 text-center font-medium text-slate-200 text-sm shadow-md">
+                    RAG & AI Agents
+                </div>
+                <i class="fa-solid fa-arrow-down text-blue-500 text-sm animate-pulse"></i>
+
+                <div class="w-full max-w-md p-4 rounded-xl bg-blue-600/20 border border-blue-500/40 text-center font-bold text-blue-400 text-sm shadow-lg">
+                    AI Engineering & Deployment
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="py-20 px-6 border-t border-slate-900 bg-slate-900/30">
+        <div class="max-w-4xl mx-auto space-y-8">
+            <div class="space-y-2 text-center">
+                <h2 class="text-3xl font-bold text-white tracking-tight">Where Mathematics Meets AI</h2>
+                <div class="w-12 h-1 bg-blue-500 mx-auto rounded-full"></div>
+            </div>
+
+            <div class="glass-panel p-8 sm:p-10 rounded-2xl space-y-6 text-slate-300 shadow-xl">
+                <p class="leading-relaxed">
+                    A mathematical background is not just a theoretical credential—it is the foundational lens through which machine learning models, optimization curves, and deep neural networks are understood and fine-tuned. 
+                </p>
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-4">
+                    <div class="p-4 rounded-xl bg-slate-900/80 border border-slate-800 space-y-2">
+                        <h4 class="font-semibold text-white flex items-center gap-2">
+                            <i class="fa-solid fa-square-root-variable text-blue-400"></i> Mathematical Reasoning
+                        </h4>
+                        <p class="text-xs text-slate-400">Dissecting core algorithmic constraints and model behavior logically.</p>
+                    </div>
+                    <div class="p-4 rounded-xl bg-slate-900/80 border border-slate-800 space-y-2">
+                        <h4 class="font-semibold text-white flex items-center gap-2">
+                            <i class="fa-solid fa-chart-pie text-blue-400"></i> Probability & Statistics
+                        </h4>
+                        <p class="text-xs text-slate-400">Evaluating likelihood estimations, uncertainty bounds, and distribution shifts.</p>
+                    </div>
+                    <div class="p-4 rounded-xl bg-slate-900/80 border border-slate-800 space-y-2">
+                        <h4 class="font-semibold text-white flex items-center gap-2">
+                            <i class="fa-solid fa-sliders text-blue-400"></i> Optimization
+                        </h4>
+                        <p class="text-xs text-slate-400">Minimizing loss functions via gradient descent and hyperparameter search landscapes.</p>
+                    </div>
+                    <div class="p-4 rounded-xl bg-slate-900/80 border border-slate-800 space-y-2">
+                        <h4 class="font-semibold text-white flex items-center gap-2">
+                            <i class="fa-solid fa-brain text-blue-400"></i> Algorithmic Mastery
+                        </h4>
+                        <p class="text-xs text-slate-400">Deep comprehension of underlying mechanics for robust AI architecture design.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-20 px-6 border-t border-slate-900">
+        <div class="max-w-5xl mx-auto space-y-12">
+            <div class="space-y-2 text-center">
+                <span class="text-xs code-font text-blue-400 uppercase tracking-widest">[Flagship Case Study]</span>
+                <h2 class="text-3xl font-bold text-white tracking-tight">Featured AI Project</h2>
+                <div class="w-12 h-1 bg-blue-500 mx-auto rounded-full"></div>
+            </div>
+
+            <div class="glass-panel p-8 sm:p-10 rounded-2xl space-y-8 border border-blue-500/30 shadow-2xl">
+                <div class="space-y-3">
+                    <h3 class="text-2xl font-bold text-white">[Project Title Placeholder]</h3>
+                    <p class="text-slate-400 text-sm">An advanced end-to-end AI system engineering demonstration combining LLM reasoning, retrieval augmented generation, and multi-agent workflow architecture.</p>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <div class="space-y-2 p-4 rounded-xl bg-slate-900/60 border border-slate-800/80">
+                        <h4 class="text-xs uppercase tracking-wider font-semibold text-blue-400">Problem</h4>
+                        <p class="text-xs text-slate-300">[Placeholder description of the complex domain challenge, latency requirements, or information retrieval bottleneck solved by this architecture.]</p>
+                    </div>
+                    <div class="space-y-2 p-4 rounded-xl bg-slate-900/60 border border-slate-800/80">
+                        <h4 class="text-xs uppercase tracking-wider font-semibold text-blue-400">Solution</h4>
+                        <p class="text-xs text-slate-300">[Placeholder outline of the engineered AI solution, custom agent pipelines, and intelligent context handling mechanism.]</p>
+                    </div>
+                </div>
+
+                <div class="space-y-2">
+                    <h4 class="text-xs uppercase tracking-wider font-semibold text-slate-400">Architecture Overview</h4>
+                    <div class="p-4 rounded-xl bg-slate-900/90 border border-slate-800 font-mono text-xs text-slate-300 overflow-x-auto">
+                        [User Query] ➔ [Vector Search / RAG] ➔ [LangChain Agent Orchestrator] ➔ [LLM Generation] ➔ [Response Validation]
+                    </div>
+                </div>
+
+                <div class="space-y-3">
+                    <h4 class="text-xs uppercase tracking-wider font-semibold text-slate-400">Technologies Used</h4>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="text-xs px-3 py-1 bg-slate-900 text-slate-300 rounded border border-slate-800">Python</span>
+                        <span class="text-xs px-3 py-1 bg-slate-900 text-slate-300 rounded border border-slate-800">LangChain</span>
+                        <span class="text-xs px-3 py-1 bg-slate-900 text-slate-300 rounded border border-slate-800">LangGraph</span>
+                        <span class="text-xs px-3 py-1 bg-slate-900 text-slate-300 rounded border border-slate-800">Pinecone</span>
+                        <span class="text-xs px-3 py-1 bg-slate-900 text-slate-300 rounded border border-slate-800">OpenAI APIs</span>
+                        <span class="text-xs px-3 py-1 bg-slate-900 text-slate-300 rounded border border-slate-800">Streamlit</span>
+                    </div>
+                </div>
+
+                <div class="pt-4 border-t border-slate-800/80 flex flex-wrap gap-4">
+                    <a href="[placeholder-github-repo]" target="_blank" class="px-5 py-2.5 rounded-lg bg-slate-800 hover:bg-slate-700 text-white text-sm font-medium transition-colors border border-slate-700 flex items-center gap-2">
+                        <i class="fa-brands fa-github"></i> GitHub Repository
+                    </a>
+                    <a href="[placeholder-live-demo]" target="_blank" class="px-5 py-2.5 rounded-lg bg-blue-600 hover:bg-blue-500 text-white text-sm font-medium transition-colors flex items-center gap-2">
+                        <i class="fa-solid fa-play"></i> Live Demo
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="py-20 px-6 border-t border-slate-900 bg-slate-900/30">
+        <div class="max-w-6xl mx-auto space-y-12">
+            <div class="space-y-2 text-center">
+                <h2 class="text-3xl font-bold text-white tracking-tight">Projects</h2>
+                <div class="w-12 h-1 bg-blue-500 mx-auto rounded-full"></div>
+                <p class="text-slate-400 text-sm">Showcasing ML, Generative AI, RAG, and Agentic systems.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                
+                <div class="glass-panel p-6 rounded-2xl flex flex-col justify-between space-y-6 hover:border-blue-500/40 transition-all">
+                    <div class="space-y-3">
+                        <span class="text-[10px] code-font px-2.5 py-1 rounded bg-slate-900 border border-slate-800 text-blue-400">Machine Learning</span>
+                        <h3 class="text-lg font-bold text-white">[Project Title 1]</h3>
+                        <p class="text-slate-400 text-xs leading-relaxed">[Short description placeholder outlining predictive modeling, algorithm choice, and evaluation metrics.]</p>
+                    </div>
+                    <div class="space-y-4">
+                        <div class="flex flex-wrap gap-1.5">
+                            <span class="text-[10px] px-2 py-0.5 bg-slate-900 text-slate-300 rounded border border-slate-800">Python</span>
+                            <span class="text-[10px] px-2 py-0.5 bg-slate-900 text-slate-300 rounded border border-slate-800">Scikit-Learn</span>
+                        </div>
+                        <div class="pt-3 border-t border-slate-800/80 flex items-center gap-3">
+                            <a href="[placeholder-github]" target="_blank" class="text-xs text-slate-300 hover:text-white flex items-center gap-1 font-medium"><i class="fa-brands fa-github"></i> Code</a>
+                            <a href="[placeholder-demo]" target="_blank" class="text-xs text-blue-400 hover:text-blue-300 flex items-center gap-1 font-medium"><i class="fa-solid fa-arrow-up-right-from-square"></i> Demo</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="glass-panel p-6 rounded-2xl flex flex-col justify-between space-y-6 hover:border-blue-500/40 transition-all">
+                    <div class="space-y-3">
+                        <span class="text-[10px] code-font px-2.5 py-1 rounded bg-slate-900 border border-slate-800 text-blue-400">RAG Application</span>
+                        <h3 class="text-lg font-bold text-white">[Project Title 2]</h3>
+                        <p class="text-slate-400 text-xs leading-relaxed">[Short description placeholder highlighting vector search, chunking strategies, and context retrieval precision.]</p>
+                    </div>
+                    <div class="space-y-4">
+                        <div class="flex flex-wrap gap-1.5">
+                            <span class="text-[10px] px-2 py-0.5 bg-slate-900 text-slate-300 rounded border border-slate-800">LangChain</span>
+                            <span class="text-[10px] px-2 py-0.5 bg-slate-900 text-slate-300 rounded border border-slate-800">ChromaDB</span>
+                        </div>
+                        <div class="pt-3 border-t border-slate-800/80 flex items-center gap-3">
+                            <a href="[placeholder-github]" target="_blank" class="text-xs text-slate-300 hover:text-white flex items-center gap-1 font-medium"><i class="fa-brands fa-github"></i> Code</a>
+                            <a href="[placeholder-demo]" target="_blank" class="text-xs text-blue-400 hover:text-blue-300 flex items-center gap-1 font-medium"><i class="fa-solid fa-arrow-up-right-from-square"></i> Demo</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="glass-panel p-6 rounded-2xl flex flex-col justify-between space-y-6 hover:border-blue-500/40 transition-all">
+                    <div class="space-y-3">
+                        <span class="text-[10px] code-font px-2.5 py-1 rounded bg-slate-900 border border-slate-800 text-blue-400">AI Agent System</span>
+                        <h3 class="text-lg font-bold text-white">[Project Title 3]</h3>
+                        <p class="text-slate-400 text-xs leading-relaxed">[Short description placeholder describing multi-agent workflow coordination and specialized tool calling.]</p>
+                    </div>
+                    <div class="space-y-4">
+                        <div class="flex flex-wrap gap-1.5">
+                            <span class="text-[10px] px-2 py-0.5 bg-slate-900 text-slate-300 rounded border border-slate-800">LangGraph</span>
+                            <span class="text-[10px] px-2 py-0.5 bg-slate-900 text-slate-300 rounded border border-slate-800">OpenAI APIs</span>
+                        </div>
+                        <div class="pt-3 border-t border-slate-800/80 flex items-center gap-3">
+                            <a href="[placeholder-github]" target="_blank" class="text-xs text-slate-300 hover:text-white flex items-center gap-1 font-medium"><i class="fa-brands fa-github"></i> Code</a>
+                            <a href="[placeholder-demo]" target="_blank" class="text-xs text-blue-400 hover:text-blue-300 flex items-center gap-1 font-medium"><i class="fa-solid fa-arrow-up-right-from-square"></i> Demo</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="py-20 px-6 border-t border-slate-900">
+        <div class="max-w-4xl mx-auto space-y-12">
+            <div class="space-y-3 text-center">
+                <h2 class="text-3xl font-bold text-white tracking-tight">Let's Build Something Intelligent.</h2>
+                <p class="text-slate-400 text-sm max-w-xl mx-auto">
+                    "I am interested in opportunities involving Artificial Intelligence, Machine Learning, Generative AI, LLM applications, and AI engineering."
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-12 gap-8 items-start">
+                
+                <div class="md:col-span-5 glass-panel p-8 rounded-2xl space-y-6">
+                    <h3 class="text-lg font-semibold text-white">Direct Channels</h3>
+                    <div class="space-y-4 text-sm text-slate-300">
+                        <a href="mailto:[placeholder-email@example.com]" class="flex items-center gap-3 hover:text-blue-400 transition-colors">
+                            <i class="fa-solid fa-envelope text-blue-500"></i> [placeholder-email@example.com]
+                        </a>
+                        <a href="https://www.linkedin.com/in/nauman-ali-b909261ba/" target="_blank" class="flex items-center gap-3 hover:text-blue-400 transition-colors">
+                            <i class="fa-brands fa-linkedin text-blue-500"></i> LinkedIn Profile
+                        </a>
+                        <a href="https://github.com/NAUMAN-ALI372" target="_blank" class="flex items-center gap-3 hover:text-blue-400 transition-colors">
+                            <i class="fa-brands fa-github text-blue-500"></i> GitHub Profile
+                        </a>
+                    </div>
+                </div>
+
+                <div class="md:col-span-7 glass-panel p-8 rounded-2xl space-y-4">
+                    <form onsubmit="event.preventDefault(); alert('Message form ready for backend wiring.');" class="space-y-4">
+                        <div class="space-y-1">
+                            <label class="text-xs font-medium text-slate-400">Name</label>
+                            <input type="text" placeholder="Your Name" required class="w-full px-4 py-2.5 rounded-lg bg-slate-900 border border-slate-800 text-slate-200 text-sm focus:outline-none focus:border-blue-500 transition-colors">
+                        </div>
+                        <div class="space-y-1">
+                            <label class="text-xs font-medium text-slate-400">Email</label>
+                            <input type="email" placeholder="your.mnauman912@gmail.com" required class="w-full px-4 py-2.5 rounded-lg bg-slate-900 border border-slate-800 text-slate-200 text-sm focus:outline-none focus:border-blue-500 transition-colors">
+                        </div>
+                        <div class="space-y-1">
+                            <label class="text-xs font-medium text-slate-400">Message</label>
+                            <textarea rows="4" placeholder="Your message..." required class="w-full px-4 py-2.5 rounded-lg bg-slate-900 border border-slate-800 text-slate-200 text-sm focus:outline-none focus:border-blue-500 transition-colors"></textarea>
+                        </div>
+                        <button type="submit" class="w-full py-3 rounded-lg bg-blue-600 hover:bg-blue-500 text-white font-medium text-sm transition-all shadow-lg shadow-blue-500/20">
+                            Send Message
+                        </button>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <footer class="py-12 px-6 border-t border-slate-900 bg-slate-950 text-center space-y-4">
+        <h3 class="text-lg font-bold text-white">Nauman Ali</h3>
+        <p class="text-sm text-slate-400">AI & Machine Learning Engineer</p>
+        <p class="code-font text-xs text-blue-400">"Mathematics-driven. AI-focused. Always learning."</p>
+        
+        <div class="flex justify-center space-x-6 text-slate-400 pt-2">
+            <a href="https://github.com/[placeholder-github]" target="_blank" class="hover:text-blue-400 transition-colors text-lg"><i class="fa-brands fa-github"></i></a>
+            <a href="https://linkedin.com/in/[placeholder-linkedin]" target="_blank" class="hover:text-blue-400 transition-colors text-lg"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="mailto:[placeholder-email@example.com]" class="hover:text-blue-400 transition-colors text-lg"><i class="fa-solid fa-envelope"></i></a>
+        </div>
+
+        <p class="text-xs text-slate-600 pt-4">© 2026 Nauman Ali. All rights reserved.</p>
+    </footer>
+
+    <script>
+        const themeToggleBtn = document.getElementById('theme-toggle');
+        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        const htmlElement = document.documentElement;
+
+        themeToggleBtn.addEventListener('click', () => {
+            htmlElement.classList.toggle('dark');
+            htmlElement.classList.toggle('light');
+        });
+
+        mobileMenuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+    </script>
+</body>
+</html>
